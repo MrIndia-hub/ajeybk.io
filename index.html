@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJEY KUMAR B K - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+            scroll-behavior: smooth; /* For smooth scrolling to sections */
+        }
+        h1, h2, h3 {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .home-background {
+            background-image: url('./HomeBG.jpg'); /* Ensure './HomeBG.jpg' is the correct path to your hero image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        /* Consider breaking down the long paragraph in the "About Me" section 
+           into smaller paragraphs or bullet points for better readability. */
+    </style>
+    <script src="script.js" defer></script>
+</head>
+
+<body class="bg-gray-100">
+
+    <nav class="bg-gray-800 text-white p-4 md:p-6 shadow-md sticky top-0 z-50 print:hidden">
+        <ul class="container mx-auto flex flex-row justify-center space-x-6 md:space-x-10 text-lg">
+            <li><a href="#home" class="hover:text-blue-400 transition-colors duration-200 flex items-center space-x-2"><i class="fas fa-home"></i> <span>Home</span></a></li>
+            <li><a href="#about" class="hover:text-blue-400 transition-colors duration-200 flex items-center space-x-2"><i class="fas fa-user"></i> <span>About</span></a></li>
+            <li><a href="#experience" class="hover:text-blue-400 transition-colors duration-200 flex items-center space-x-2"><i class="fas fa-briefcase"></i> <span>Experience</span></a></li>
+            <li><a href="#education" class="hover:text-blue-400 transition-colors duration-200 flex items-center space-x-2"><i class="fas fa-graduation-cap"></i> <span>Education</span></a></li>
+            <li><a href="#skills" class="hover:text-blue-400 transition-colors duration-200 flex items-center space-x-2"><i class="fas fa-cogs"></i> <span>Skills</span></a></li>
+            <li><a href="#contact" class="hover:text-blue-400 transition-colors duration-200 flex items-center space-x-2"><i class="fas fa-envelope"></i> <span>Contact</span></a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="home-background relative text-white py-24 md:py-32 flex items-center justify-center min-h-[calc(100vh-64px)]">
+        <!-- The div below now has a semi-transparent background for better text readability over the image -->
+        <div class="relative z-10 container mx-auto px-4 text-center bg-black bg-opacity-50 p-6 md:p-8 rounded-lg">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-4 animate-fade-in-down italic">AJEY KUMAR B K</h1>
+            <p class="text-xl md:text-2xl font-light mb-8 opacity-90 animate-fade-in-up"><span class="text-white font-semibold">Senior Software Engineer and Corporate Trainer</span></p>
+            <a href="./Resume.pdf" class="inline-block bg-white text-blue-700 font-bold py-3 px-8 rounded-full text-lg hover:bg-gray-200 transition-colors duration-300 shadow-lg animate-fade-in-up" download="Ajey_Kumar_BK_Resume.pdf">
+                <i class="fas fa-download mr-2"></i> Download Resume
+            </a>
+        </div>
+    </section>
+
+    <section id="about" class="py-16 bg-white shadow-inner">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-gray-800 text-center mb-8 pb-2 relative">
+                <i class="fas fa-info-circle mr-3 text-blue-500"></i> About Me
+            </h2>
+            <div class="flex flex-col md:flex-row items-center md:items-start gap-8 mt-8">
+                <!-- Image Column -->
+                <div class="flex-shrink-0">
+                    <img src="./IMG-20250325-WA0025.jpg" alt="Ajey Kumar B K Profile Photo"
+                         class="w-64 h-80 object-cover rounded-lg shadow-lg border-4 border-blue-200">
+                         <!-- Increased size, rectangular (rounded-lg), object-cover ensures aspect ratio is maintained while filling dimensions -->
+                </div>
+                <!-- Text Content Column -->
+                <div class="text-lg leading-relaxed text-gray-700 text-left">
+                    <!-- Consider breaking this long paragraph into smaller ones or using bullet points for roles/achievements -->
+                    <p>Ajey Kumar B K is an accomplished Electronics and Communication Engineer (BE, SJCIT, 2013) with a strong background in embedded systems, software development, and technical training.
+
+Graduate Trainee at BEL (2015–2016): Gained practical experience in defense-grade electronic systems, quality assurance, and embedded hardware testing.
+
+Senior Software Engineer at Avyukti Technologies (Dec 2018 – Mar 2023): Led multiple projects in embedded C, IoT solutions, and software integration, contributing to product development and system optimization.
+
+Training Manager at Livewire, Mathikere, Bangalore (Jul 2023 – Jun 2025): Spearheaded technical training programs in embedded systems, Python, and MATLAB; mentored over 200 students; designed industry-relevant curriculum and workshops.
+
+Ajey brings a unique combination of hands-on technical expertise and leadership in education, making him a strong asset in roles involving R&D, product development, and training strategy.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-16 bg-white shadow-inner">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold text-gray-800 text-center mb-8 pb-2 relative"><i class="fas fa-history mr-3 text-blue-500"></i> Experience</h2>
+            <div class="experience-item bg-white rounded-lg shadow-md p-8 border-l-4 border-blue-500 hover:shadow-xl hover:scale-105 transition-all duration-300 ease-in-out max-w-5xl mx-auto text-left">
+                <h3 class="text-2xl font-semibold text-gray-900 mb-2 whitespace-nowrap overflow-hidden text-ellipsis">IT Trainer [Python FULL STACK DEVELOPER AND CORPORATE TRAINER]</h3>
+                <h4 class="text-blue-600 font-medium mb-1"><strong>LiveWire Technologies</strong> | MS Ramaiah Rd, Gokula 1st Stage, Mathikere Extension Mathikere, Bengaluru-560054 Karnataka</h4>
+                <p class="text-gray-600 text-sm mb-4">Aug 2023 - Present</p>
+                <ul class="list-disc list-inside text-gray-700 space-y-2">
+                    <li>Designed and developed comprehensive training programs, modules, and materials (e.g., presentations, user guides, exercises, quick reference cards) for various IT systems, software applications, and technical skills.</li>
+                    <li>Delivered engaging and effective training sessions to diverse audiences, from end-users to technical staff, across various levels of IT proficiency.</li>
+                    <li>Acted as a subject matter expert, clearly explaining complex technical concepts in an understandable manner to non-technical audiences.</li>
+                    <li>Provided technical support and troubleshooting assistance during and after training sessions to ensure successful application of learned skills.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="py-16 bg-gray-200">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold text-gray-800 text-center mb-8 pb-2 relative"><i class="fas fa-university mr-3 text-blue-500"></i> Education</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
+                <div class="bg-white rounded-lg shadow-md p-6 border-t-4 border-blue-500 hover:shadow-xl hover:scale-105 transition-all duration-300 ease-in-out">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Bachelor of Engineering (ECE)</h3>
+                    <p class="text-blue-600 font-medium mb-1">SJC Institute Of Technology, Chickaballapura</p>
+                    <p class="text-gray-700">Percentage: 58 %</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 border-t-4 border-blue-500 hover:shadow-xl hover:scale-105 transition-all duration-300 ease-in-out">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">PUC in PCMB</h3>
+                    <p class="text-blue-600 font-medium mb-1">SBGNS Rural Composite PU College, Chickaballapura</p>
+                    <p class="text-gray-700">Percentage: 55.33 %</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 border-t-4 border-blue-500 hover:shadow-xl hover:scale-105 transition-all duration-300 ease-in-out">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Secondary School Leaving Certificate (SSLC)</h3>
+                    <p class="text-blue-600 font-medium mb-1">Vani Vidya Kendra High School, Devanahalli</p>
+                    <p class="text-gray-700">Percentage: 78 %</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-16 bg-gray-200">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold text-gray-800 text-center mb-8 pb-2 relative"><i class="fas fa-laptop-code mr-3 text-blue-500"></i> Skills</h2>
+            <div class="skills-container flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
+                <span class="skill-tag bg-blue-500 text-white px-4 py-2 rounded-full shadow-md hover:bg-blue-600 hover:shadow-lg hover:scale-110 transition-all duration-200 ease-in-out">Python</span>
+                <span class="skill-tag bg-blue-500 text-white px-4 py-2 rounded-full shadow-md hover:bg-blue-600 hover:shadow-lg hover:scale-110 transition-all duration-200 ease-in-out">Git & GitHub</span>
+                <span class="skill-tag bg-blue-500 text-white px-4 py-2 rounded-full shadow-md hover:bg-blue-600 hover:shadow-lg hover:scale-110 transition-all duration-200 ease-in-out">PowerShell</span>
+                 <span class="skill-tag bg-blue-500 text-white px-4 py-2 rounded-full shadow-md hover:bg-blue-600 hover:shadow-lg hover:scale-110 transition-all duration-200 ease-in-out">DevOps</span>
+                 <span class="skill-tag bg-blue-500 text-white px-4 py-2 rounded-full shadow-md hover:bg-blue-600 hover:shadow-lg hover:scale-110 transition-all duration-200 ease-in-out">Jira</span>
+                <span class="skill-tag bg-blue-500 text-white px-4 py-2 rounded-full shadow-md hover:bg-blue-600 hover:shadow-lg hover:scale-110 transition-all duration-200 ease-in-out">ServiceNow</span>
+                <span class="skill-tag bg-blue-500 text-white px-4 py-2 rounded-full shadow-md hover:bg-blue-600 hover:shadow-lg hover:scale-110 transition-all duration-200 ease-in-out">MySQL</span>
+                <span class="skill-tag bg-blue-500 text-white px-4 py-2 rounded-full shadow-md hover:bg-blue-600 hover:shadow-lg hover:scale-110 transition-all duration-200 ease-in-out">HTML</span>
+                 <span class="skill-tag bg-blue-500 text-white px-4 py-2 rounded-full shadow-md hover:bg-blue-600 hover:shadow-lg hover:scale-110 transition-all duration-200 ease-in-out">Power BI</span>
+                <span class="skill-tag bg-blue-500 text-white px-4 py-2 rounded-full shadow-md hover:bg-blue-600 hover:shadow-lg hover:scale-110 transition-all duration-200 ease-in-out">AWS</span>
+                <span class="skill-tag bg-blue-500 text-white px-4 py-2 rounded-full shadow-md hover:bg-blue-600 hover:shadow-lg hover:scale-110 transition-all duration-200 ease-in-out">Azure</span>
+             </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-16 bg-gray-200">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold text-gray-800 text-center mb-8 pb-2 relative"><i class="fas fa-address-book mr-3 text-blue-500"></i> Contact Me</h2>
+            <p class="text-lg text-gray-700 mb-8">Feel free to reach out to me through any of the following channels:</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-xl mx-auto text-left">
+                <div class="contact-item bg-white rounded-lg shadow-md p-4 flex items-center space-x-4 hover:shadow-xl hover:scale-105 transition-all duration-300 ease-in-out">
+                    <i class="fas fa-envelope-open-text text-blue-500 text-2xl"></i>
+                    <p class="text-gray-800"><strong>Email:</strong> <a href="mailto:kajeyuma@gmail.com" class="text-blue-600 hover:underline">kajeyuma@gmail.com</a></p>
+                </div>
+                <div class="contact-item bg-white rounded-lg shadow-md p-4 flex items-center space-x-4 hover:shadow-xl hover:scale-105 transition-all duration-300 ease-in-out">
+                    <i class="fas fa-phone-alt text-blue-500 text-2xl"></i>
+                    <p class="text-gray-800"><strong>Phone:</strong> <a href="tel: +919164773341" class="text-blue-600 hover:underline">+91 9164773341</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white p-6 text-center">
+        <p>&copy; 2024 Ajey Kumar B K. All rights reserved.</p>
+    </footer>
+
+</body>
+
+
+</html>
